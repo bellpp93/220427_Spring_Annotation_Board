@@ -30,6 +30,8 @@ public class UserDAO {
 				user = new UserDO();
 				user.setId(rs.getString("ID"));
 				user.setPassword(rs.getString("PASSWORD"));
+				user.setName(rs.getString("NAME"));
+				user.setRole(rs.getString("ROLE"));
 			}
 			
 		} catch (Exception e) {
