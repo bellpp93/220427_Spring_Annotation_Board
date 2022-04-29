@@ -85,7 +85,7 @@ public class BoardDAO {
 			JDBCUtil.close(rs, pstmt, conn);
 		}
 		return board;
-	}  // End getBoard() 메소드 ========================================================
+	}  // End getBoard() 메소드  ==============================================================
 	
 	public void updateBoard(BoardDO boardDO) {
 		System.out.println("===> JDBC로 updateBoard() 메소드 처리");
@@ -107,7 +107,7 @@ public class BoardDAO {
 		} finally {
 			JDBCUtil.close(pstmt, conn);
 		}
-	}  // End updateBoard() 메소드 =====================================================
+	}  // End updateBoard() 메소드 =============================================================
 	
 	public void insertBoard(BoardDO boardDO) {
 		System.out.println("===> JDBC로 insertBoard() 메소드 처리");
@@ -128,7 +128,7 @@ public class BoardDAO {
 		} finally {
 			JDBCUtil.close(pstmt, conn);
 		}
-	}  // End insertBoard() 메소드 ====================================================
+	}  // End insertBoard() 메소드 ===========================================================
 	
 	public void deleteBoard(BoardDO boardDO) {
 		System.out.println("===> JDBC로 deleteBoard() 메소드 처리");
@@ -147,5 +147,5 @@ public class BoardDAO {
 		} finally {
 			JDBCUtil.close(pstmt, conn);
 		}
-	}  // End deleteBoard() 메소드 ====================================================
+	}  // End deleteBoard() 메소드 ==========================================================
 }
