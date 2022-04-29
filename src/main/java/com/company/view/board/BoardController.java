@@ -31,4 +31,18 @@ public class BoardController {  // 통합 컨트롤러
 		boardDAO.updateBoard(boardDO);
 		return "getBoardList.do";
 	}
+	
+	// 새 게시글 입력(게시글 등록)
+	@RequestMapping("/insertBoard.do")
+	public String insertBoard(BoardDO boardDO, BoardDAO boardDAO) {
+		boardDAO.insertBoard(boardDO);
+		return "getBoardList.do";
+	}
+	
+	// 게시글 삭제
+	@RequestMapping("/deleteBoard.do")
+	public String deleteBoard(BoardDO boardDO, BoardDAO boardDAO) {
+		boardDAO.deleteBoard(boardDO);
+		return "getBoardList.do";
+	}
 }
